@@ -16,13 +16,13 @@ int fib(int n, int* cache) {
 }
 
 int main() {
+  int n;
   cin >> n;
   int *cache = new int[n+1];
   for(int i=0; i<=n; i++) {
     cache[i] = 0;
   }
-  cout << fibo(n, cache) << endl;
+  cout << fib(n, cache) << endl;
   
 }
-
 ```
